@@ -1,0 +1,150 @@
+/*
+Theme Name: Oikos
+Theme URI: http://oikos.org.uk/
+Description: Custom Theme for oikos.org.uk
+Version: 1.0
+Author: Ross Wintle
+Author URI: http://oikos.org.uk/
+Tags: custom, widgets
+
+	Oikos v1.0
+	 http://oikos.org/
+
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+@charset "utf-8";
+
+/* Reset some stuff */
+
+html {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #FFF;
+	height: 100%;
+	font-family: arial, sans-serif;
+	margin: 10px;
+}
+
+.main-container {
+	width: 900px;
+	height: 100%;
+	margin: 30px auto;
+	border-style: none;
+}
+
+.header-container {
+	height: 145px;
+	position: relative;   /* This is needed because we need to position things within it as absolute */
+}
+
+.header-logo {
+	display: block;
+	float: left;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+.header-menu {
+	display: block;
+	float: left;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+ul.nav {
+	display: block;
+	float: left;
+	font-weight: bolder;
+	font-size: 24px;
+	padding-bottom: 5px;
+	margin: 0px;
+}
+
+li.nav-item {
+	display: block;
+	float: left;
+	margin-left: 10px;
+	padding: 4px;
+	border: 2px solid #FFF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-border-radius: 10px;
+}
+
+.body-container{
+}
+
+.content-container{
+	margin: 30px 0px;
+}	
+
+.hr-thick {
+  height: 3px;
+  color: #124E91;
+  background-color: #124E91;
+  border: none;
+}
+
+img.more-than {
+}
+
+#terms h1 {
+}
+
+#terms h2 {
+}
+
+.terms-section ol {
+		list-style-type: none;
+}
+
+.sidebar-container{
+}
+
+.footer-container{
+}
+
+.footer-widgets{
+}
+
+.footer-widgets ul {
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.footer-widgets li.widget{
+	display: block;
+	float: left;
+	width: 200px;
+	margin-left: 0px;
+	margin-right: 20px;
+	border: none;
+	padding: 5px;
+}
+
+.footer-widgets li.widget h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.oikos-dark-blue{ color: #124E91; }
+.oikos-light-blue { color: #20C4F4; }
+.oikos-dark-green{ color: #004D24; }
+.oikos-light-green { color: #00944A; }
+.oikos-dark-yellow{ color: #F68B1F; }
+.oikos-light-yellow { color: #FFC20E; }
+.oikos-dark-red{ color: #C4161C; }
+.oikos-light-red { color: #EF4060; }
+.oikos-dark-pink{ color: #A61E5E; }
+.oikos-light-pink { color: #F49AC1; }
+
