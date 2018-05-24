@@ -32,12 +32,12 @@
 		a.section-heading h2 {
 			margin: 0;
 		}
-		.section-content open {
+		.section-content {
 			max-height: 0;
 			overflow: hidden;
 			transition: max-height 0.5s;
 		}
-		.section-content open.open {
+		.section-content.open {
 			max-height: 1000px;
 		}
 	</style>
@@ -320,8 +320,7 @@
 
 	function expandSection(ev) {
 		ev.preventDefault();
-		console.log(ev.currentTarget.parentElement);
-		const content = ev.currentTarget.parentElement.querySelector('.section-content open').classList.toggle('open');
+		const content = ev.currentTarget.parentElement.querySelector('.section-content').classList.toggle('open');
 	}
 
 </script>
