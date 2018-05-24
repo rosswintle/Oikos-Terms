@@ -25,22 +25,19 @@
 		a.section-heading {
 			display: block;
 			text-decoration: none;
-			background-color: #DA3E8E;
+			background-color: #333333;
 			color: white;
 			padding: 0.5rem;
-		}
-		section:nth-child(2n) .section-heading {
-			background-color: #39A4BC;
 		}
 		a.section-heading h2 {
 			margin: 0;
 		}
-		.section-content {
+		.section-content open {
 			max-height: 0;
 			overflow: hidden;
 			transition: max-height 0.5s;
 		}
-		.section-content.open {
+		.section-content open.open {
 			max-height: 1000px;
 		}
 	</style>
@@ -70,7 +67,7 @@
 							</h2>
 						</a>
 
-						<div class="section-content">
+						<div class="section-content open">
 							<p>
 								We do everything we can to minimise the data we collect and store, and to keep it secure. We use strong, random, unique passwords on all online services stored in secure systems and we use two-factor authentication where available. We encrypt data where possible and we look after our mobile devices.
 							</p>
@@ -87,7 +84,7 @@
 							</h2>
 						</a>
 
-						<div class="section-content">
+						<div class="section-content open">
 							<ul>
 								<li>
 									We collect analytics data and store cookies in your browser to make that work.
@@ -104,7 +101,7 @@
 							</h2>
 						</a>
 
-						<div class="section-content">
+						<div class="section-content open">
 							<p>
 								We will store and process data needed to reply to your question or enquiry.
 							<p>
@@ -143,7 +140,7 @@
 							</h2>
 						</a>
 
-						<div class="section-content">
+						<div class="section-content open">
 							<p>
 								We will store and process data needed to execute the project effectively.
 							</p>
@@ -182,7 +179,7 @@
 							</h2>
 						</a>
 							
-						<div class="section-content">
+						<div class="section-content open">
 							<ul>
 								<li>
 									See "If we work on a project for/with you" - the same guidelines apply.
@@ -199,7 +196,7 @@
 							</h2>
 						</a>
 							
-						<div class="section-content">
+						<div class="section-content open">
 
 							<p>
 								We will store and process data needed to provide your hosting service.
@@ -250,7 +247,7 @@
 							</h2>
 						</a>
 							
-						<div class="section-content">
+						<div class="section-content open">
 
 							<p>
 								We will store and process data needed to provide your hosting service.
@@ -280,7 +277,7 @@
 							</h2>
 						</a>
 							
-						<div class="section-content">
+						<div class="section-content open">
 							<p>
 								 You will have opted to receive occasional informational emails from us.
 							</p>
@@ -303,7 +300,7 @@
 							</h2>
 						</a>
 							
-						<div class="section-content">
+						<div class="section-content open">
 							<p>
 								We have motion-sensitive, night-vision security cameras installed which will catch you and upload video of you to a cloud-based security system. Video from these cameras may be stored using the cloud-based service for up to 30 days, but no longer. This video may be downloaded to computers or mobile devices for analysis in the event of a security incident.
 							</p>
@@ -324,7 +321,7 @@
 	function expandSection(ev) {
 		ev.preventDefault();
 		console.log(ev.currentTarget.parentElement);
-		const content = ev.currentTarget.parentElement.querySelector('.section-content').classList.toggle('open');
+		const content = ev.currentTarget.parentElement.querySelector('.section-content open').classList.toggle('open');
 	}
 
 </script>
