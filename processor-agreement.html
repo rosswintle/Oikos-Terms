@@ -32,14 +32,6 @@
 		a.section-heading h2 {
 			margin: 0;
 		}
-		.section-content {
-			max-height: 0;
-			overflow: hidden;
-			transition: max-height 0.5s;
-		}
-		.section-content.open {
-			max-height: 1000px;
-		}
 	</style>
   </head>
   
@@ -223,17 +215,5 @@
     	</div>
     </div>
 </body>
-
-<script>
-	document.querySelectorAll('.section-heading').forEach(function (elem) {
-		elem.addEventListener('click', expandSection);
-	});
-
-	function expandSection(ev) {
-		ev.preventDefault();
-		const content = ev.currentTarget.parentElement.querySelector('.section-content').classList.toggle('open');
-	}
-
-</script>
 
 </html>
